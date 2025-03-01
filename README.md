@@ -1,49 +1,37 @@
-# 🌤 Weather App | Real-Time Weather Forecast  
+# 🌦️ Weather App
 
-A **modern, API-powered, and responsive Weather App** providing **real-time weather updates** using **HTML, CSS, and JavaScript**, with seamless **OpenWeather API integration**. This project is designed for **high performance, scalability, and a user-friendly experience**.  
-
----
-
-## 🚀 Key Features  
-
-✅ **Real-Time Weather Updates** – Fetch accurate weather details instantly 🌍  
-✅ **Search by City Name** – Enter any city to get weather insights 📍  
-✅ **Temperature & Condition Display** – Shows real-time temperature, humidity, and wind speed 🌡️💨  
-✅ **Dynamic UI & Backgrounds** – Changes based on live weather conditions 🌄☁️  
-✅ **Geolocation Support** – Auto-detects location and displays weather data 📌  
-✅ **Dark & Light Mode** – Toggle themes for better readability 🌙☀️  
-✅ **Optimized API Calls** – Efficient OpenWeather API integration for **minimal latency** ⚡  
-✅ **Responsive Design** – Works seamlessly on mobile, tablet, and desktop 📱💻  
-✅ **Error Handling** – Displays alerts for invalid cities or API errors 🚫  
-✅ **Scalable Codebase** – Modular JavaScript structure for **future enhancements** 🔧  
+A simple and responsive Weather App built using **HTML, CSS, and JavaScript** that fetches real-time weather data using external APIs. This project highlights my skills in **frontend development, API integration, and asynchronous JavaScript**.
 
 ---
 
-## 🛠️ Technologies Used  
+## 📌 Project Overview
 
-- **HTML5** – Structured content for SEO optimization  
-- **CSS3** – Advanced styling, animations, and dark mode  
-- **JavaScript (ES6)** – Fetch API for real-time data  
-- **OpenWeather API** – Reliable weather data provider  
-- **Responsive Web Design (RWD)** – Fully adaptable UI  
-- **Git & GitHub** – Version control and collaboration  
-- **API Integration** – Seamless third-party service usage  
-- **Performance Optimization** – Minimal API calls for efficiency  
-- **Error Handling & Validation** – Ensures smooth user experience  
-- **Cross-Browser Compatibility** – Works across Chrome, Edge, Safari, and Firefox  
+The Weather App allows users to search for current weather conditions by entering a city name. It displays temperature, humidity, wind speed, and a brief weather description with a clean and modern UI.
 
 ---
 
-## 🌆 Screenshot  
+## ✨ Key Features
 
-![Weather App](weather-app.png)  
+- 🌍 **Search by City:** Get weather updates for any city worldwide.  
+- 🌡️ **Real-time Data:** Uses an API to fetch current weather data.  
+- 📊 **Detailed Info:** Shows temperature, humidity, wind speed, and weather conditions.  
+- 🎨 **Responsive UI:** Built with HTML and CSS for a clean look on all devices.  
+- ⚡ **Asynchronous JS:** Fetch API used for non-blocking requests.  
+- 🚫 **Error Handling:** Displays messages for invalid city names or API issues.  
 
 ---
 
-## 📥 Installation Guide  
+## 🛠️ Tech Stack
 
-Follow these steps to set up and run the Weather App locally:  
+- **Frontend:** HTML, CSS, JavaScript  
+- **API:** OpenWeatherMap API (or specify the API you used)  
+- **HTTP Requests:** Fetch API (JavaScript)  
 
-1. **Clone the Repository**  
-   ```sh
-   git clone https://github.com/Brainstorm-collab/Weather-App.git
+---
+
+## 🚀 Installation
+
+1. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
