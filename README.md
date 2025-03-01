@@ -29,9 +29,23 @@ The Weather App allows users to search for current weather conditions by enterin
 
 ---
 
-## 🚀 Installation
+## 📦 Dependencies
 
-1. **Clone the repository:**  
-   ```bash
-   git clone https://github.com/your-username/weather-app.git
-   cd weather-app
+No external libraries required.  
+Only a valid API key is needed.
+
+---
+
+## 🖥️ Usage
+
+- Enter a city name in the search bar and click "Get Weather".  
+- View current temperature, humidity, wind speed, and a brief description of the weather.  
+- Error messages will appear for invalid city names or connectivity issues.  
+
+### 🌟 **Screenshot**
+![Weather App Screenshot](screenshot.png)  
+
+> 🔄 **Note:** Make sure the image file is named `screenshot.png` and is in the same directory as the **README.md** file.  
+
+---
+
