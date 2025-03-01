@@ -43,9 +43,9 @@ Only a valid API key is needed.
 - Error messages will appear for invalid city names or connectivity issues.  
 
 ### 🌟 **Screenshot**
-![Weather App Screenshot](screenshot.png)  
+![Weather App Screenshot](weather-app.png)  
 
-> 🔄 **Note:** Make sure the image file is named `screenshot.png` and is in the same directory as the **README.md** file.  
+> 🔄 **Note:** Make sure the image file is named **weather-app.png** and is in the same directory as the **README.md** file.  
 
 ---
 
