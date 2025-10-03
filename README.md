@@ -1,6 +1,6 @@
 # 🌦️ Weather App
 
-### 🌟 **Screenshot**
+### 🌟 **Preview**
 ![Weather App Screenshot](weather-app.png)  
 
 A simple and responsive Weather App built using **HTML, CSS, and JavaScript** that fetches real-time weather data using external APIs. This project highlights my skills in **frontend development, API integration, and asynchronous JavaScript**.
