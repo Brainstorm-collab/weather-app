@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
@@ -5,9 +9,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     color: #fff;
+    padding: 20px;
+    transition: all 0.3s ease;
 }
 
 .container {
@@ -61,8 +67,9 @@ body {
 
 button[type="submit"] {
     padding: 12px 20px;
+    background:  hsl(0, 100%, 69%);
     font-size: 1rem;
-    background: #ff6f61;
+    /* background: hsl(5, 100%, 50%); */
     color: white;
     border: none;
     border-radius: 8px;
@@ -71,8 +78,18 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #ff3b2f;
+    background: hsl(0, 100%, 50%);
     transform: scale(1.05);
+}
+
+button[type="submit"]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+button[type="submit"]:disabled:hover {
+    transform: none;
 }
 
 .card {
@@ -143,7 +160,95 @@ button[type="submit"]:hover {
     to { transform: translateY(-10px); }
 }
 
+/* Enhanced Error Styling */
+.error-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.error-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    animation: bounce 1s infinite alternate;
+}
+
+.errorDisplay {
+    color: #ff6f61;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Suggestions Styling */
+.suggestions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.suggestion-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.suggestion-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(5px);
+}
+
+/* Loading Animation */
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Enhanced Card Animations */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Input Focus Enhancement */
+.cityInput:focus {
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+}
+
+/* Weather Icon Enhancement */
+.weatherEmoji {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    transition: all 0.3s ease;
+}
+
+.weatherEmoji:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design Improvements */
 @media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
     .weatherForm {
         padding: 20px;
     }
@@ -171,5 +276,64 @@ button[type="submit"]:hover {
     .weatherFooter {
         flex-direction: column;
         gap: 10px;
+    }
+    
+    .suggestions {
+        gap: 8px;
+    }
+    
+    .suggestion-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 95%;
+    }
+    
+    .weatherForm {
+        padding: 15px;
+    }
+    
+    .weatherForm h2 {
+        font-size: 1.5rem;
+    }
+    
+    .cityDisplay {
+        font-size: 1.8rem;
+    }
+    
+    .tempDisplay {
+        font-size: 2.5rem;
+    }
+    
+    .weatherEmoji {
+        font-size: 3rem;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .card {
+        border: 2px solid #fff;
+    }
+    
+    .cityInput {
+        border: 2px solid #fff;
+    }
+    
+    button[type="submit"] {
+        border: 2px solid #fff;
     }
 }

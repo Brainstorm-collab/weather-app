@@ -48,4 +48,3 @@ Only a valid API key is needed.
 > 🔄 **Note:** Make sure the image file is named **weather-app.png** and is in the same directory as the **README.md** file.  
 
 ---
-
